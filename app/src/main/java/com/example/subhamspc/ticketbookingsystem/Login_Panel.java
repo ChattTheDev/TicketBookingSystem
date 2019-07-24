@@ -6,14 +6,19 @@ import android.os.Bundle;
 import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
 
 public class Login_Panel extends AppCompatActivity {
     Button backbutt, signinbutt;
 
     EditText email2, pass2;
+
+
 
     DatabaseHelper mydb1;
 
@@ -25,11 +30,15 @@ public class Login_Panel extends AppCompatActivity {
         setContentView(R.layout.activity_login__panel);
         mydb1 = new DatabaseHelper(this);
 
+
+
         email2 = (EditText)findViewById(R.id.editText3);
         pass2 = (EditText)findViewById(R.id.editText6);
         signinbutt = (Button)findViewById(R.id.button5);
 
         backbutt = (Button)findViewById(R.id.button6);
+
+
 
         signinbutt.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -46,6 +55,7 @@ public class Login_Panel extends AppCompatActivity {
                 }
                 else
                 {
+
                     Toast.makeText(Login_Panel.this, "User Name or Password does not match", Toast.LENGTH_LONG).show();
                 }
 

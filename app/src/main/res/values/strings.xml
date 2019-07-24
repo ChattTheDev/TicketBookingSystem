@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">Ticket Booking System</string>
+    <string name="regis">User Registration</string>
+    <string name="login">User Login</string>
+    <string name="Welcome">Welcome</string>
+
+    //for User Registration
+
+    <string name="regist">Registration Page</string>
+    <string name="userid">User ID</string>
+    <string name="name">Name</string>
+    <string name="email">E-mail</string>
+    //used both for registration and sign in
+    <string name="pass">Password</string>
+    //used both for registration and sign in
+    <string name="enterid">Enter Any ID</string>
+    <string name="entername">Enter Your Name</string>
+    <string name="enteremail">Enter Your Email</string>
+    //used both for registration and sign in
+    <string name="enterpass">Enter Your Password</string>
+    //used both for registration and sign in
+    <string name="signupbutt">sign up</string>
+    <string name="back">back</string>
+    //used both for registration and sign in
+
+    //for user login
+
+    <string name="logint">Login Page</string>
+    <string name="loginbutt">login</string>
+
+
+
+</resources>

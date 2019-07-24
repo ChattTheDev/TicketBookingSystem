@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Login_Panel"
+    android:background="@drawable/dffff">
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="192dp"
+        android:layout_height="53dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="38dp"
+
+        android:fontFamily="serif"
+        android:text="@string/logint"
+        android:textAlignment="center"
+        android:textColor="#FF8F00"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="34dp"
+        android:layout_marginTop="279dp"
+        android:fontFamily="serif"
+        android:text="@string/email"
+        android:textAlignment="center"
+        android:textColor="#f44336"
+        android:textSize="23sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/editText3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textView8"
+        android:layout_alignStart="@+id/editText6"
+        android:ems="10"
+        android:hint="@string/enteremail"
+        android:inputType="textEmailAddress"
+        android:textAlignment="center"
+        android:background="@drawable/edittext"/>
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="221dp"
+        android:layout_marginStart="27dp"
+        android:fontFamily="serif"
+        android:text="@string/pass"
+        android:textAlignment="center"
+        android:textColor="#CDDC39"
+        android:textSize="23sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/editText6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textView9"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="27dp"
+        android:ems="10"
+        android:hint="@string/enterpass"
+        android:inputType="textPassword"
+        android:textAlignment="center"
+        android:background="@drawable/edittext"/>
+
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="96dp"
+        android:layout_marginStart="72dp"
+        android:background="@drawable/button"
+        android:text="@string/loginbutt"
+        android:textColor="#000000"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/button6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/button5"
+        android:layout_marginEnd="72dp"
+        android:background="@drawable/button"
+        android:text="@string/back"
+        android:textColor="#000000"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="145dp"
+        android:layout_height="292dp"
+        android:layout_alignTop="@+id/textView6"
+        android:layout_centerHorizontal="true"
+        app:srcCompat="@drawable/login" />
+</RelativeLayout>

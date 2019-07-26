@@ -30,7 +30,8 @@
             android:text="Starting From"
             android:layout_margin="20dp"
             android:textSize="25sp"
-            android:textStyle="bold"/>
+            android:textStyle="bold"
+            android:textColor="#90CAF9"/>
         <TextView
             android:id="@+id/textView16"
             android:layout_width="match_parent"
@@ -60,7 +61,8 @@
             android:text="Going To"
             android:layout_margin="20dp"
             android:textSize="25sp"
-            android:textStyle="bold"/>
+            android:textStyle="bold"
+            android:textColor="#90CAF9"/>
         <TextView
             android:id="@+id/textView24"
             android:layout_width="match_parent"
@@ -90,7 +92,8 @@
             android:text="Total Cost"
             android:layout_margin="20dp"
             android:textSize="25sp"
-            android:textStyle="bold"/>
+            android:textStyle="bold"
+            android:textColor="#FFCA28"/>
         <TextView
             android:id="@+id/textView26"
             android:layout_width="match_parent"
@@ -119,7 +122,8 @@
             android:text="Travel Date"
             android:layout_margin="20dp"
             android:textSize="25sp"
-            android:textStyle="bold"/>
+            android:textStyle="bold"
+            android:textColor="#FFCA28"/>
         <TextView
             android:id="@+id/textView28"
             android:layout_width="match_parent"

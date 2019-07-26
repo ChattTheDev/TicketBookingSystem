@@ -337,4 +337,8 @@ public class Booking_Panel extends AppCompatActivity implements AdapterView.OnIt
 
     }
 
+    @Override
+    public void onBackPressed() {
+
+    }
 }

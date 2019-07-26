@@ -84,10 +84,16 @@ public class Registration_panel extends AppCompatActivity {
 
     }
 
+
     @Override
     protected void onDestroy() {
         super.onDestroy();
 
         mydb.close();
+    }
+
+    @Override
+    public void onBackPressed() {
+
     }
 }

@@ -7,13 +7,14 @@
     tools:context=".Registration_panel"
     android:background="@drawable/dffff"
     android:orientation="vertical"
-    android:padding="30dp">
+    android:padding="20dp">
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="8dp"
         android:text="REGISTRATION PAGE"
+        android:textColor="#FF8F00"
         android:textAlignment="center"
         android:textSize="30sp"
         android:textStyle="bold" />
@@ -33,10 +34,10 @@
             android:id="@+id/editText2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="   UserName"
+            android:hint="UserName"
             android:textSize="14sp"
             android:inputType="text"
-            android:drawableLeft="@drawable/ic_account_circle_black_24dp"
+            android:drawableRight="@drawable/ic_account_circle_black_24dp"
             />
 
 
@@ -53,10 +54,10 @@
             android:id="@+id/editText4"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="   Email"
+            android:hint="Email"
             android:textSize="14sp"
             android:inputType="textEmailAddress"
-            android:drawableLeft="@drawable/ic_email_black_24dp"
+            android:drawableRight="@drawable/ic_email_black_24dp"
             />
 
 
@@ -67,16 +68,17 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="25dp"
         android:layout_marginLeft="30dp"
-        android:layout_marginRight="30dp">
+        android:layout_marginRight="30dp"
+        app:passwordToggleEnabled="true">
 
         <EditText
             android:id="@+id/editText5"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="   Password"
+            android:hint="Password"
             android:textSize="14sp"
             android:inputType="textPassword"
-            android:drawableLeft="@drawable/ic_security_black_24dp"
+
             />
 
 
@@ -90,7 +92,7 @@
         android:layout_marginTop="40dp"
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
-        android:background="@drawable/button"/>
+        android:background="@drawable/button_pressed"/>
 
     <Button
         android:id="@+id/button4"
@@ -100,7 +102,7 @@
         android:layout_marginTop="20dp"
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
-        android:background="@drawable/button"/>
+        android:background="@drawable/button_pressed"/>
 
 
 

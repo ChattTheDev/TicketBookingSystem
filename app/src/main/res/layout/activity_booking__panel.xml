@@ -1,194 +1,258 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Booking_Panel"
-    android:background="@drawable/dffff">
+    android:background="@drawable/dffff"
+    android:orientation="vertical"
+    android:padding="20dp">
 
     <TextView
-        android:id="@+id/textView10"
-        android:layout_width="227dp"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="17dp"
-
-        android:fontFamily="serif"
         android:text="Booking Page"
-        android:textAlignment="center"
-        android:textColor="#FF8F00"
         android:textSize="30sp"
-        android:textStyle="bold" />
 
-    <TextView
-        android:id="@+id/textView11"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="124dp"
-        android:fontFamily="sans-serif"
-        android:text="Station Details"
         android:textAlignment="center"
-        android:textColor="#FFEB3B"
-        android:textSize="21sp"
-        android:textStyle="normal|bold" />
+        android:textStyle="bold"
+        android:textColor="#FF8F00"/>
 
 
-    <TextView
-        android:id="@+id/textView12"
-        android:layout_width="wrap_content"
+
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_alignTop="@+id/spinner"
-        android:layout_marginStart="59dp"
-        android:text="From"
-        android:textAlignment="center"
-        android:textColor="#FFCCBC"
-        android:textSize="19sp"
-        android:textStyle="bold" />
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginRight="10dp"
+        app:cardBackgroundColor="#ffffff"
+        app:cardCornerRadius="23dp"
+        app:cardElevation="2dp">
 
-    <TextView
-        android:id="@+id/textView13"
-        android:layout_width="wrap_content"
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginBottom="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp">
+
+
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                app:cardBackgroundColor="#FF7043"
+                app:cardCornerRadius="23dp"
+                app:cardElevation="2dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginBottom="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="From :"
+                        android:textColor="#ffffff"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                    <Spinner
+                        android:id="@+id/spinner"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:textAlignment="center"></Spinner>
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="10dp"
+                app:cardBackgroundColor="#FF7043"
+                app:cardCornerRadius="23dp"
+                app:cardElevation="2dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="To:"
+                        android:textColor="#ffffff"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                    <Spinner
+                        android:id="@+id/spinner2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="37dp"
+                        android:layout_marginRight="10dp"
+                        android:textAlignment="center"></Spinner>
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_centerVertical="true"
-        android:layout_marginStart="69dp"
-        android:text="To"
-        android:textAlignment="center"
-        android:textColor="#FFCCBC"
-        android:textSize="19sp"
-        android:textStyle="bold" />
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="10dp"
+        app:cardBackgroundColor="#ffffff"
+        app:cardCornerRadius="23dp"
+        app:cardElevation="2dp">
 
-    <TextView
-        android:id="@+id/textView17"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_alignStart="@+id/textView13"
-        android:layout_marginBottom="185dp"
-        android:text="FARE"
-        android:textAlignment="center"
-        android:textColor="#CDDC39"
-        android:textSize="19sp"
-        android:textStyle="bold" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginBottom="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp">
 
-    <TextView
-        android:id="@+id/textView18"
-        android:layout_width="161dp"
-        android:layout_height="55dp"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentEnd="true"
-        android:layout_marginBottom="171dp"
-        android:layout_marginEnd="68dp"
-        android:background="@drawable/edit1"
-        android:textAlignment="center"
-        android:textColor="#ffffff"
-        android:textSize="25sp"
-        android:textStyle="bold" />
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                app:cardBackgroundColor="#FF7043"
+                app:cardCornerRadius="23dp"
+                app:cardElevation="2dp">
 
-    <View
-        android:id="@+id/divider"
-        android:layout_width="331dp"
-        android:layout_height="10dp"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="273dp"
-        android:background="#80D8FF" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="10dp">
 
-    <View
-        android:id="@+id/divider2"
-        android:layout_width="331dp"
-        android:layout_height="10dp"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="175dp"
-        android:background="#80D8FF"
-        android:visibility="visible" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Fare(RS) :"
+                        android:textColor="#ffffff"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
 
-    <TextView
-        android:id="@+id/textView19"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_marginBottom="111dp"
-        android:layout_toStartOf="@+id/textView11"
-        android:text="Travel Date"
-        android:textAlignment="center"
-        android:textColor="#CDDC39"
-        android:textSize="19sp"
-        android:textStyle="bold" />
+                    <TextView
+                        android:id="@+id/textView18"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="40dp"
+                        android:layout_marginRight="10dp"
+                        android:textAlignment="center"
+                        android:background="@drawable/edit1"
+                        />
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
 
-    <TextView
-        android:id="@+id/textView20"
-        android:layout_width="177dp"
-        android:layout_height="wrap_content"
-        android:layout_alignStart="@+id/textView18"
-        android:layout_alignTop="@+id/textView19"
-        android:background="@drawable/textviews"
-        android:text="Choose Date"
-        android:textAlignment="center"
-        android:textColor="#ffffff"
-        android:textSize="19sp"
-        android:textStyle="bold" />
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                app:cardBackgroundColor="#FF7043"
+                app:cardCornerRadius="23dp"
+                app:cardElevation="2dp">
 
-    <Button
-        android:id="@+id/button7"
-        android:layout_width="104dp"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_marginBottom="23dp"
-        android:layout_toStartOf="@+id/textView18"
-        android:background="@drawable/button"
-        android:text="Book now"
-        android:textColor="#070606"
-        android:textStyle="bold" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
 
-    <Button
-        android:id="@+id/button8"
-        android:layout_width="98dp"
-        android:layout_height="wrap_content"
-        android:layout_alignParentEnd="true"
-        android:layout_alignTop="@+id/button7"
-        android:layout_marginEnd="59dp"
-        android:background="@drawable/button"
-        android:text="LOGout"
-        android:textAlignment="center"
-        android:textColor="#000000"
-        android:textStyle="bold" />
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginBottom="10dp">
 
-    <Spinner
-        android:id="@+id/spinner"
-        android:layout_width="215dp"
-        android:layout_height="24dp"
-        android:layout_alignEnd="@+id/divider"
-        android:layout_alignParentTop="true"
-        android:layout_marginTop="228dp"
-        android:textAlignment="center" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Choose Date :"
+                        android:textColor="#ffffff"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
 
-    <Spinner
-        android:id="@+id/spinner2"
-        android:layout_width="215dp"
-        android:layout_height="wrap_content"
-        android:layout_alignEnd="@+id/divider"
-        android:layout_centerVertical="true"
-        android:textAlignment="center" />
+                    <TextView
+                        android:id="@+id/textView20"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="30dp"
+                        android:layout_marginEnd="10dp"
+                        android:text="Click Here"
+                        android:textAlignment="center"
+                        android:background="@drawable/edit1"/>
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
 
-    <TextView
-        android:id="@+id/textView14"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginTop="82dp"
-        android:marqueeRepeatLimit="marquee_forever"
-        android:maxLines="1"
-        android:text="(Only Asansol Division)       (Only Asansol Division)       (Only Asansol Division)     (Only Asansol Division)"
-        android:textColor="#ff4500"
-        android:textSize="15sp"
-        android:textStyle="bold" />
 
-</RelativeLayout>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_marginTop="15dp"
+       android:layout_marginBottom="20dp"
+       android:orientation="vertical">
+
+
+
+       <Button
+           android:id="@+id/button7"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:text="Book Now"
+           android:layout_marginTop="15dp"
+           android:layout_marginRight="10dp"
+           android:layout_marginLeft="10dp"
+           android:background="@drawable/button_pressed"/>
+       <Button
+           android:id="@+id/button8"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:text="Log out"
+           android:layout_marginTop="15dp"
+           android:layout_marginRight="10dp"
+           android:layout_marginLeft="10dp"
+           android:layout_marginBottom="20dp"
+           android:background="@drawable/button_pressed"/>
+
+   </LinearLayout>
+
+
+
+</LinearLayout>

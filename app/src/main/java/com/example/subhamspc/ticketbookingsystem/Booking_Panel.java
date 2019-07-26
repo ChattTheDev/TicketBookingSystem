@@ -50,15 +50,15 @@ public class Booking_Panel extends AppCompatActivity implements AdapterView.OnIt
         setContentView(R.layout.activity_booking__panel);
 
 
-        TextView mark = (TextView) findViewById(R.id.textView14);
+       // TextView mark = (TextView) findViewById(R.id.textView14);
         b1 = (Button) findViewById(R.id.button7);
         b2 = (Button) findViewById(R.id.button8);
 
         t1 = (TextView) findViewById(R.id.textView18);
         mdisplaydate = (TextView) findViewById(R.id.textView20);
-        mark.setSelected(true);
+       /* mark.setSelected(true);
         mark.setEllipsize(TextUtils.TruncateAt.MARQUEE);
-        mark.setSingleLine(true);
+        mark.setSingleLine(true); */
 
         mdisplaydate.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -91,7 +91,7 @@ public class Booking_Panel extends AppCompatActivity implements AdapterView.OnIt
 
                 String a = mdisplaydate.getText().toString();
 
-                if(a.equals("Choose Date"))
+                if(a.equals("Click Here"))
                 {
                     Toast.makeText(Booking_Panel.this, "Please Choose Travel Date", Toast.LENGTH_LONG).show();
                 }

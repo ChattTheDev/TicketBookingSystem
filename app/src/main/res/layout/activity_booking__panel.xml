@@ -144,7 +144,7 @@
         android:layout_toStartOf="@+id/textView18"
         android:background="@drawable/button"
         android:text="Book now"
-        android:textColor="#000000"
+        android:textColor="#070606"
         android:textStyle="bold" />
 
     <Button
